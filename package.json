@@ -1,0 +1,25 @@
+{
+  "name": "logger-winston",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andersneto1/logger-winston.git"
+  },
+  "keywords": [
+    "logger"
+  ],
+  "author": "Anderson Neto <andersneto@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andersneto1/logger-winston/issues"
+  },
+  "homepage": "https://github.com/andersneto1/logger-winston#readme",
+  "dependencies": {
+    "winston": "^3.3.3"
+  }
+}
