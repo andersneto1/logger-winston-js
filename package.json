@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
     "test": "jest"
   },
   "repository": {
@@ -20,6 +22,7 @@
   },
   "homepage": "https://github.com/andersneto1/logger-winston#readme",
   "dependencies": {
+    "dayjs": "^1.10.3",
     "winston": "^3.3.3"
   }
 }
