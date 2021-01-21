@@ -45,11 +45,5 @@ const getUser = async(auditPayload) => {
 
 module.exports.register = register;
 
-// register(
-//     'error', 
-//     {status:"error", name: "NomeErro",  stack: "Erros"}, 
-//     {id: 1, name: "Andersneto", email: "andersneto@gmail.com" }
-// )
-
 
 

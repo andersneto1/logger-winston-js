@@ -1,6 +1,6 @@
 {
-  "name": "logger-winston-alcn",
-  "version": "1.0.1",
+  "name": "logger-winston-js",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andersneto1/logger-winston.git"
+    "url": "git+https://github.com/andersneto1/logger-winston-js.git"
   },
   "keywords": [
     "logger"
@@ -18,9 +18,9 @@
   "author": "Anderson Neto <andersneto@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andersneto1/logger-winston/issues"
+    "url": "https://github.com/andersneto1/logger-winston-js/issues"
   },
-  "homepage": "https://github.com/andersneto1/logger-winston#readme",
+  "homepage": "https://github.com/andersneto1/logger-winston-js#readme",
   "dependencies": {
     "dayjs": "^1.10.3",
     "winston": "^3.3.3"
