@@ -1,4 +1,4 @@
-const {register} = require('../src/index');
+const {saveLog} = require('../src/index');
 
 
 test('register log - user', async() => {
@@ -6,7 +6,7 @@ test('register log - user', async() => {
     throw new Error('Exception message');
   } catch (error) {
     expect(    
-      await register({
+      await saveLog({
         dirAndNameFile:"logs/test.log",
         level: 'error', 
         error: error, 
@@ -25,7 +25,7 @@ test('register log - app', async() => {
     throw new Error('Exception message');
   } catch (error) {
     expect(    
-      await register({
+      await saveLog({
         dirAndNameFile:"logs/test.log",
         level: 'error', 
         error: error, 
@@ -43,7 +43,7 @@ test('register log - without user or appkey ', async() => {
     throw new Error('Exception message');
   } catch (error) {
     expect(    
-      await register({
+      await saveLog({
         dirAndNameFile:"logs/test.log",
         level: 'error', 
         error: error, 
@@ -58,7 +58,7 @@ test('register log - empty object ', async() => {
     throw new Error('Exception message');
   } catch (error) {
     expect(    
-      await register({})
+      await saveLog({})
     ).toBe(false);
   }
 });

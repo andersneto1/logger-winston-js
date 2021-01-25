@@ -6,7 +6,7 @@ const dateNameFile = dayjs().format('YYYY-MM-DD')
 const created_at = dayjs().format('YYYY-MM-DD HH:mm:ss')
 
 //{level, error, appName, userData, appData, route, ip, dirAndNameFile, created_at, aditional: json}
-const register = async(errorData) => {
+const saveLog = async(errorData) => {
 
   if(Object.keys(errorData).length === 0){
     return false;
@@ -42,5 +42,5 @@ const register = async(errorData) => {
   return true;
 }
 
-module.exports.register = register;
+module.exports.saveLog = saveLog;
 
