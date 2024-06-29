@@ -10,7 +10,7 @@ const saveLog = async(errorData) => {
 
   if(Object.keys(errorData).length === 0){
     return false;
-  }    
+  }
 
   const logger = winston.createLogger({
     defaultMeta: { app: errorData.appName?errorData.appName:null},
@@ -29,6 +29,8 @@ const saveLog = async(errorData) => {
     ],
   });
 
+  const { error } = errorData
+
   logger.log({
     level: errorData.level?errorData.level:'info',
     date: errorData.created_at?errorData.created_at:created_at,
@@ -36,7 +38,7 @@ const saveLog = async(errorData) => {
     appData: errorData.appData?errorData.appData:null,
     ip: errorData.ip?errorData.ip:null,
     route: errorData.route?errorData.route:null,
-    error: errorData.error?{ status: errorData.error.status, name: errorData.error.name, description: errorData.error.stack }:null,
+    error: errorData.error?{ status: errorData.error.status, name: errorData.error.name, description: error }:null,
     ...errorData.aditional
   })
   return true;
